@@ -6,26 +6,26 @@ You need to add _sa-jdi.jar_ to your class path. This is generally available in 
 
 You can install _sa-jdi.jar_ to your local maven repository if you use [maven][maven].
 
-	```bash
-	mvn install:install-file  -Dfile=/usr/local/java/jdk1.7.0_40/lib/sa-jdi.jar \
-      -DgroupId=sun.jvm.hotspot \
-      -DartifactId=sa-jdi \
-      -Dversion=24.0-b56.BuildVersion \
-      -Dpackaging=jar \
-      -DgeneratePom=true \
-      -DcreateChecksum=true
-	```
+```bash
+mvn install:install-file  -Dfile=/usr/local/java/jdk1.7.0_40/lib/sa-jdi.jar \
+    -DgroupId=sun.jvm.hotspot \
+    -DartifactId=sa-jdi \
+    -Dversion=24.0-b56.BuildVersion \
+    -Dpackaging=jar \
+    -DgeneratePom=true \
+    -DcreateChecksum=true
+```
 
 Now, you can add sa-jdi dependency to your pom.xml
 
 
-	```xml
-	<dependency>
-        <groupId>sun.jvm.hotspot</groupId>
-        <artifactId>sa-jdi</artifactId>
-        <version>24.0-b56.BuildVersion</version>
-	</dependency>
-	```
+```xml
+<dependency>
+    <groupId>sun.jvm.hotspot</groupId>
+    <artifactId>sa-jdi</artifactId>
+    <version>24.0-b56.BuildVersion</version>
+</dependency>
+```
 
 sa-jdi docs is here: [http://www.docjar.com/docs/api/sun/jvm/hotspot/package-index.html][sa_jdi_doc]
 
