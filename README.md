@@ -27,6 +27,11 @@ Now, you can add sa-jdi dependency to your pom.xml
 </dependency>
 ```
 
+If you use `javac` and `java`, you should add _sa-jdi.jar_ to your class path like this:
+
+	javac -cp ".:$JAVA_HOME/lib/sa-jdi.jar" PrintStringTable.java
+	java -cp ".:$JAVA_HOME/lib/sa-jdi.jar" PrintStringTable <PID of a running JVM>
+
 sa-jdi docs is here: [http://www.docjar.com/docs/api/sun/jvm/hotspot/package-index.html][sa_jdi_doc]
 
 [PermStat]: http://www.docjar.com/html/api/sun/jvm/hotspot/tools/PermStat.java.html "PermStat"
